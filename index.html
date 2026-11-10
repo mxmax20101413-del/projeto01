@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<!-- Informa ao navegador que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Tag principal do documento HTML.
+     lang="pt-BR" informa que o idioma da página é português brasileiro. -->
+
+<head>
+    <!-- A tag head contém configurações e informações da página.
+         Esses elementos não aparecem diretamente no conteúdo visual. -->
+
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres.
+         UTF-8 permite exibir acentos, cedilhas e caracteres especiais. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a visualização em dispositivos móveis.
+         width=device-width adapta a largura ao tamanho da tela.
+         initial-scale=1.0 define o zoom inicial em 100%. -->
+
+    <meta name="description" content="Cardápio da hamburgueria Fogo de Palha.">
+    <!-- Fornece uma descrição da página.
+         Pode ser utilizada pelos mecanismos de busca nos resultados. -->
+
+    <title>MPcabelos/salão</title>
+    <!-- Define o título que aparece na aba do navegador. -->
+
+    <link rel="icon" href="img/logo.jpg">
+    <!-- Define o ícone da página (favicon).
+         href indica o caminho da imagem dentro da pasta img. -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Conecta o documento HTML ao arquivo CSS.
+         rel="stylesheet" indica que o arquivo é uma folha de estilos.
+         href informa onde está localizado o arquivo CSS. -->
+
+</head>
+<!-- Finaliza a área de configurações do documento. -->
+
+
+<body>
+    <!-- A tag body contém todo o conteúdo visível da página. -->
+
+    <header class="cabecalho">
+        <!-- HEADER representa o cabeçalho do site.
+             class identifica o elemento para aplicar estilos CSS. -->
+
+        <div class="container cabecalho-conteudo">
+            <!-- DIV é um elemento genérico usado para agrupar conteúdos.
+                 container e cabecalho-conteudo são classes CSS.
+                 Um elemento pode possuir mais de uma classe. -->
+
+            <a class="logo" href="#inicio">
+                <!-- A tag A cria um link clicável.
+                     class="logo" permite estilizar o link.
+                     href="#inicio" leva o usuário à seção com id="inicio". -->
+
+                <img src="img/salao.jpg.jpg" alt="Logo Fogo de Palha">
+                <!-- IMG insere uma imagem na página.
+                     src informa o caminho do arquivo.
+                     alt fornece uma descrição alternativa da imagem. -->
+
+                <span>MPcabelos</span>
+                <!-- SPAN agrupa um pequeno trecho de texto.
+                     É um elemento em linha, útil para estilização. -->
+
+            </a>
+            <!-- Finaliza o link da logo. -->
+
+            <nav aria-label="Navegação principal">
+                <!-- NAV representa uma área de navegação do site.
+                     aria-label fornece um nome acessível para leitores de tela. -->
+
+                <a href="#inicio">Início</a>
+                <!-- Link que leva à seção identificada como inicio. -->
+
+                <a href="#nossos trabalhos">nossos trabalhos</a>
+                <!-- Link que leva à seção identificada como cardapio. -->
+
+                <a href="#contato">Contato</a>
+                <!-- Link que leva à seção identificada como contato. -->
+
+            </nav>
+            <!-- Finaliza a área de navegação. -->
+
+        </div>
+        <!-- Finaliza o agrupamento do cabeçalho. -->
+
+    </header>
+    <!-- Finaliza o cabeçalho do site. -->
+
+
+    <main>
+        <!-- MAIN representa o conteúdo principal da página.
+             Deve conter o conteúdo central do documento. -->
+
+        <section class="hero" id="inicio">
+            <!-- SECTION cria uma seção temática.
+                 class="hero" permite aplicar o estilo da seção principal.
+                 id="inicio" cria um identificador único para receber links. -->
+
+            <div class="container hero-conteudo">
+                <!-- Agrupa o conteúdo da seção principal.
+                     As classes são utilizadas para estilização CSS. -->
+
+                <div>
+                    <!-- DIV agrupa os elementos de texto e botão. -->
+
+                    <p class="destaque">hidratação</p>
+                    <!-- P representa um parágrafo.
+                         A classe destaque permite dar aparência especial ao texto. -->
+
+                    <h1>fique bela para voce.</h1>
+                    <!-- H1 representa o título principal da página.
+                         Normalmente deve existir um H1 principal por página. -->
+
+                    <p class="hero-texto">
+                        <!-- Abre um parágrafo com uma classe específica para CSS. -->
+
+                        Escolha um de nossos trabalhos de sua preferencia
+
+                    </p>
+                    <!-- Fecha o parágrafo de apresentação. -->
+
+                    <a class="botao" href="#nossos trabalhos">nossos trabalhos</a>
+                    <!-- Cria um link com aparência de botão.
+                         class="botao" aplica a estilização CSS.
+                         href="#cardapio" leva o usuário à seção do cardápio. -->
+
+                </div>
+                <!-- Fecha o agrupamento de textos e botão. -->
+
+                <div class="hero-ilustracao" aria-hidden="true">&#9986;</div>
+                <!-- DIV cria uma área para a ilustração.
+                     hero-ilustracao permite estilização CSS.
+                     aria-hidden="true" esconde esse elemento de leitores de tela,
+                     pois o emoji é apenas decorativo. -->
+
+            </div>
+            <!-- Fecha o conteúdo interno da seção principal. -->
+
+        </section>
+        <!-- Finaliza a seção de apresentação (hero). -->
+
+
+        <section class="nossos trabalhos" id="nossos trabalhos">
+            <!-- Cria a seção do cardápio.
+                 class identifica a seção para o CSS.
+                 id permite acessá-la através de links internos. -->
+
+            <div class="container">
+                <!-- Agrupa e organiza o conteúdo dentro de um container. -->
+
+                <div class="titulo-secao">
+                    <!-- DIV que agrupa o título e a descrição da seção. -->
+
+                    <p class="destaque">salão</p>
+                    <!-- Parágrafo usado como texto de destaque. -->
+
+                    <h2>escolha uma das opções abaixo:</h2>
+                    <!-- H2 representa um título de segundo nível.
+                         Organiza hierarquicamente o conteúdo da página. -->
+
+                    <p>Produtos e preços fictícios</p>
+                    <!-- Parágrafo informativo sobre os produtos. -->
+
+                </div>
+                <!-- Finaliza o agrupamento do título da seção. -->
+
+
+                <div class="grade-produtos">
+                    <!-- DIV que agrupa os cards dos produtos.
+                         A classe grade-produtos provavelmente utiliza CSS Grid
+                         ou Flexbox para organizar os produtos em colunas. -->
+
+
+                    <article class="card">
+                        <!-- ARTICLE representa um conteúdo independente.
+                             Neste caso, representa um card de hambúrguer.
+                             A classe card define sua aparência. -->
+
+                        <div class="card-icone" aria-hidden="true"></div>
+                        <!-- DIV que apresenta um ícone decorativo.
+                             aria-hidden impede que leitores de tela anunciem o emoji. -->
+
+                        <h3>hidratação</h3>
+                        <!-- H3 representa um título de terceiro nível.
+                             Aqui identifica o nome do hambúrguer. -->
+
+                        <p>uma hidratação perfeita + lavagem</p>
+                        <!-- P apresenta a descrição dos ingredientes. -->
+
+                        <div class="card-rodape">
+                            <!-- DIV agrupa o preço e o link de escolha do produto. -->
+
+                            <strong>R$ 50,00</strong>
+                            <!-- STRONG indica que o conteúdo tem importância.
+                                 Geralmente aparece em negrito. -->
+
+                            <a href="#pedido">Escolher</a>
+                            <!-- Cria um link para a seção de pedido.
+                                 href="#pedido" procura o elemento com id="pedido". -->
+
+                        </div>
+                        <!-- Finaliza o rodapé do primeiro card. -->
+
+                    </article>
+                    <!-- Finaliza o card do Fogo Clássico. -->
+
+
+                    <article class="card card-destaque">
+                        <!-- ARTICLE cria o segundo card.
+                             Possui duas classes:
+                             card = estilo padrão dos produtos.
+                             card-destaque = estilo especial para destacá-lo. -->
+
+                        <span class="selo">Favorito</span>
+                        <!-- SPAN apresenta um pequeno selo visual.
+                             A classe selo permite estilizar a identificação de favorito. -->
+
+                        <div class="card-icone" aria-hidden="true"></div>
+                        <!-- DIV apresenta um emoji decorativo de bacon. -->
+
+                        <h3>pintura</h3>
+                        <!-- H3 apresenta o nome do segundo hambúrguer. -->
+
+                        <p>pintura + todos cuidados pré e pós pintura.</p>
+                        <!-- P apresenta a descrição do produto. -->
+
+                        <div class="card-rodape">
+                            <!-- Agrupa o preço e o link de escolha. -->
+
+                            <strong>R$ 120,00</strong>
+                            <!-- STRONG destaca o preço do produto. -->
+
+                            <a href="#pedido">Escolher</a>
+                            <!-- Link para a seção de pedido. -->
+
+                        </div>
+                        <!-- Finaliza o rodapé do segundo card. -->
+
+                    </article>
+                    <!-- Finaliza o card do Brasa Bacon. -->
+
+
+                    <article class="card">
+                        <!-- ARTICLE cria o terceiro card do cardápio. -->
+
+                        <div class="card-icone" aria-hidden="true"></div>
+                        <!-- DIV apresenta um emoji decorativo de vegetais. -->
+
+                        <h3>alisamento</h3>
+                        <!-- H3 identifica o nome do terceiro hambúrguer. -->
+
+                        <p>alisamento perfeito com todos cuidados necessários para seu cabelo.</p>
+                        <!-- P apresenta a descrição dos ingredientes. -->
+
+                        <div class="card-rodape">
+                            <!-- Agrupa o preço e o link de escolha do produto. -->
+
+                            <strong>R$ 80,00</strong>
+                            <!-- STRONG destaca o preço. -->
+
+                            <a href="#pedido">Escolher</a>
+                            <!-- Link que leva o usuário à seção de pedido. -->
+
+                        </div>
+                        <!-- Finaliza o rodapé do terceiro card. -->
+
+                    </article>
+                    <!-- Finaliza o card Horta na Brasa. -->
+
+                </div>
+                <!-- Finaliza a grade de produtos. -->
+
+            </div>
+            <!-- Finaliza o container do cardápio. -->
+
+        </section>
+        <!-- Finaliza a seção do cardápio. -->
+
+
+        <section class="pedido" id="pedido">
+            <!-- SECTION cria a seção de instruções para realizar um pedido.
+                 class permite estilização CSS.
+                 id permite navegar até essa seção pelos links. -->
+
+            <div class="container pedido-conteudo">
+                <!-- DIV agrupa o título e a lista de instruções. -->
+
+                <div>
+                    <!-- Agrupa os textos de apresentação da seção. -->
+
+                    <p class="destaque">Como pedir</p>
+                    <!-- P apresenta o texto de destaque. -->
+
+                    <h2>Um fluxo simples</h2>
+                    <!-- H2 apresenta o título da seção de pedido. -->
+
+                </div>
+                <!-- Fecha o agrupamento de textos. -->
+
+
+                <ol>
+                    <!-- OL cria uma lista ordenada.
+                         Os itens recebem numeração automaticamente. -->
+
+                    <li><span>1</span> Escolha um de nossos trabalhos.</li>
+                    <!-- LI representa um item da lista.
+                         SPAN destaca visualmente o número 1. -->
+
+                    <li><span>2</span> Informe qual deseja.</li>
+                    <!-- Segundo item da lista de instruções. -->
+
+                    <li><span>3</span> Confirme dia e horario disponiveis.</li>
+                    <!-- Terceiro item da lista de instruções. -->
+
+                    <li><span>4</span> Envie o pedido pelo WhatsApp.</li>
+                    <!-- Quarto item da lista de instruções. -->
+
+                </ol>
+                <!-- Finaliza a lista ordenada. -->
+
+            </div>
+            <!-- Finaliza o container da seção de pedido. -->
+
+        </section>
+        <!-- Finaliza a seção de pedido. -->
+
+    </main>
+    <!-- Finaliza o conteúdo principal da página. -->
+
+
+    <footer id="contato">
+        <!-- FOOTER representa o rodapé do site.
+             Geralmente contém informações de contato, localização e funcionamento.
+             id="contato" permite acessar o rodapé pelo menu de navegação. -->
+
+        <div class="container rodape-conteudo">
+            <!-- DIV agrupa e organiza as informações do rodapé. -->
+
+            <div>
+                <!-- Primeiro agrupamento de informações. -->
+
+                <strong>MPcabelos</strong>
+                <!-- STRONG destaca o nome da hamburgueria. -->
+
+                <p>WhatsApp: 86994827351</p>
+                <!-- P apresenta uma informação sobre o projeto. -->
+
+            </div>
+            <!-- Finaliza o primeiro agrupamento. -->
+
+
+            <div>
+                <!-- Segundo agrupamento de informações. -->
+
+                <p>segunda a sexta · 10:00 horas as 18:30</p>
+                <!-- P apresenta os dias e horários de funcionamento. -->
+
+                <p>Parnaíba — PI</p>
+                <!-- P apresenta a localização da hamburgueria. -->
+
+            </div>
+            <!-- Finaliza o segundo agrupamento. -->
+
+        </div>
+        <!-- Finaliza o container do rodapé. -->
+
+    </footer>
+    <!-- Finaliza o rodapé do site. -->
+
+</body>
+<!-- Finaliza todo o conteúdo visível da página. -->
+
+</html>
+<!-- Finaliza o documento HTML. -->
