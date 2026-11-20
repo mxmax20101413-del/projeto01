@@ -34,7 +34,7 @@
     <!-- Conecta o documento HTML ao arquivo CSS.
          rel="stylesheet" indica que o arquivo é uma folha de estilos.
          href informa onde está localizado o arquivo CSS. -->
-
+<script src="app.js" defer></script>
 </head>
 <!-- Finaliza a área de configurações do documento. -->
 
@@ -107,7 +107,7 @@
                 <div>
                     <!-- DIV agrupa os elementos de texto e botão. -->
 
-                    <p class="destaque">hidratação</p>
+                    <p class="destaque">Salão de beleza / MPcabelos</p>
                     <!-- P representa um parágrafo.
                          A classe destaque permite dar aparência especial ao texto. -->
 
@@ -184,11 +184,11 @@
                         <!-- DIV que apresenta um ícone decorativo.
                              aria-hidden impede que leitores de tela anunciem o emoji. -->
 
-                        <h3>hidratação</h3>
+                        <h3>POTE HIDRATAÇÃO CABELO CACHEADO</h3>
                         <!-- H3 representa um título de terceiro nível.
                              Aqui identifica o nome do hambúrguer. -->
 
-                        <p>uma hidratação perfeita + lavagem</p>
+                        <p>uma hidratação perfeita no couro capilar soltando seus cachos</p>
                         <!-- P apresenta a descrição dos ingredientes. -->
 
                         <div class="card-rodape">
@@ -197,7 +197,14 @@
                             <strong>R$ 50,00</strong>
                             <!-- STRONG indica que o conteúdo tem importância.
                                  Geralmente aparece em negrito. -->
-
+<label for= "quantidade">Qantidade:</label>
+<input
+type="number"
+id="quantidade"
+min="1"
+max="5"
+value="1"
+>
                             <a href="#pedido">Escolher</a>
                             <!-- Cria um link para a seção de pedido.
                                  href="#pedido" procura o elemento com id="pedido". -->
@@ -215,17 +222,16 @@
                              card = estilo padrão dos produtos.
                              card-destaque = estilo especial para destacá-lo. -->
 
-                        <span class="selo">Favorito</span>
                         <!-- SPAN apresenta um pequeno selo visual.
                              A classe selo permite estilizar a identificação de favorito. -->
 
                         <div class="card-icone" aria-hidden="true"></div>
                         <!-- DIV apresenta um emoji decorativo de bacon. -->
 
-                        <h3>pintura</h3>
+                        <h3>KIT CABELOS AO VENTO</h3>
                         <!-- H3 apresenta o nome do segundo hambúrguer. -->
 
-                        <p>pintura + todos cuidados pré e pós pintura.</p>
+                        <p>um kit shampoo + mascara + finalizador.</p>
                         <!-- P apresenta a descrição do produto. -->
 
                         <div class="card-rodape">
@@ -233,7 +239,14 @@
 
                             <strong>R$ 120,00</strong>
                             <!-- STRONG destaca o preço do produto. -->
-
+<label for= "quantidade">Qantidade:</label>
+<input
+type="number"
+id="quantidade"
+min="1"
+max="5"
+value="1"
+>
                             <a href="#pedido">Escolher</a>
                             <!-- Link para a seção de pedido. -->
 
@@ -249,19 +262,27 @@
 
                         <div class="card-icone" aria-hidden="true"></div>
                         <!-- DIV apresenta um emoji decorativo de vegetais. -->
-
-                        <h3>alisamento</h3>
+<span class="selo">mais pedido</span>
+                        <h3>KIT SKIN-CARE + CILIOS + UNHAS PORTIÇAS
+                        </h3>
                         <!-- H3 identifica o nome do terceiro hambúrguer. -->
 
-                        <p>alisamento perfeito com todos cuidados necessários para seu cabelo.</p>
+                        <p>cuidados com sua pele com um kit skin-care, acompanha uma mascara para sua pele + esponja para cuidados especiais. Junto cilios e unhas portiças para realçar sua beleza.</p>
                         <!-- P apresenta a descrição dos ingredientes. -->
 
                         <div class="card-rodape">
                             <!-- Agrupa o preço e o link de escolha do produto. -->
 
-                            <strong>R$ 80,00</strong>
+                            <strong>R$ 149,99</strong>
                             <!-- STRONG destaca o preço. -->
-
+<label for= "quantidade">Qantidade:</label>
+<input
+type="number"
+id="quantidade"
+min="1"
+max="5"
+value="1"
+>
                             <a href="#pedido">Escolher</a>
                             <!-- Link que leva o usuário à seção de pedido. -->
 
@@ -295,7 +316,7 @@
                     <p class="destaque">Como pedir</p>
                     <!-- P apresenta o texto de destaque. -->
 
-                    <h2>Um fluxo simples</h2>
+                    <h2>fácil, rápido e de forma simples:</h2>
                     <!-- H2 apresenta o título da seção de pedido. -->
 
                 </div>
@@ -370,7 +391,38 @@
 
     </footer>
     <!-- Finaliza o rodapé do site. -->
+<selecion class="bairros-atendidos">
+     <h2>&#128205; Bairros atendidos</h2>
+     <p>realizamos atendimento domiciliar em:</p>
+     <ul>
+          <li>São Judas Tadeu</li>
+          <li>João XXIII</li>
+     </ul>
+</selecion>
+<section class="fas fa-shooping-cart finalizar compra">
+     <h2>finalizar pedido</h2>
+     <p>preencha seus dados para concluir compra</p>
 
+     <select id="formPedido">
+
+          <input type="text" id="nome"
+          placeholder="Seu nome e sobrenome" required>
+          <select id="bairro" required>
+          <option value="selecione seu bairro">selecione seu bairro</option>
+          <option value="São Judas Tadeu">São Judas Tadeu</option>
+          <option value="JoãoXXIII">JoãoXXIII</option>
+          </select>
+
+          <select id="produto" required>
+               <option value="escolha seu serviço">escolha seu serviço</option>
+               <option value="POTE HIDRATAÇÃO CABELO CACHEADO - R$ 50,00">POTE HIDRATAÇÃO CABELO CACHEADO</option>
+               <option value="KIT CABELOS AO VENTO - R$ 120,00">KIT CABELOS AO VENTO</option>
+               <option value="KIT SKIN-CARE + CILIOS + UNHAS - R$ 149,99">KIT SKIN-CARE + CILIOS + UNHAS</option>
+          </select>
+     <button type="submit">FINALIZAR COMPRA</button>
+
+     </form>
+</section>
 </body>
 <!-- Finaliza todo o conteúdo visível da página. -->
 
